@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskTrack - Manage Your Tasks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>TaskTrack</h1>
+    </header>
+
+    <main>
+        <!-- Task Input Section -->
+        <div class="task-input">
+            <input type="text" id="taskName" placeholder="Enter task name">
+            <button type="button" id="addTaskBtn">Add Task</button>
+        </div>
+
+        <!-- Task List Section -->
+        <div class="task-list">
+            <h2>Your Tasks</h2>
+            <ul id="taskContainer"></ul>
+        </div>
+    </main>
+</div>
+
+<!-- Edit Task Modal -->
+<div id="editTaskModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeEditModal()">&times;</span>
+        <h2>Edit Task</h2>
+        <input type="hidden" id="editTaskId">
+        <label>Title:</label>
+        <input type="text" id="editTaskTitle">
+        <label>Description:</label>
+        <input type="text" id="editTaskDescription">
+        <label>Status:</label>
+        <select id="editTaskStatus">
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+        </select>
+        <button type="button" id="updateTaskBtn">Update Task</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

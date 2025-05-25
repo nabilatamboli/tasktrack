@@ -1,0 +1,186 @@
+/* General Page Styling */
+body {
+    background-color: #E8F6F3; /* Light Teal */
+    font-family: 'Poppins', sans-serif;
+    color: #2C3333;
+    text-align: center;
+}
+
+/* Main Container */
+.container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background: #FFFFFF; /* White */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+    font-size: 2rem;
+    color: #126E82; /* Deep Teal */
+    text-shadow: 2px 2px 4px rgba(18, 110, 130, 0.5);
+}
+
+/* Task Input Box */
+.task-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #168AAD; /* Teal Border */
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #F0FDFB; /* Lightest Teal */
+    color: #2C3333;
+}
+
+.task-input button {
+    background: #126E82;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.task-input button:hover {
+    background: #0F5C6C; /* Darker Teal */
+}
+
+/* Task List */
+.task-list {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.task-list h2 {
+    color: #126E82;
+    font-size: 1.5rem;
+}
+
+.task-item {
+    background: #F0FDFB; /* Soft Teal */
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(18, 110, 130, 0.2);
+}
+
+.task-item strong {
+    font-size: 1.1rem;
+}
+
+/* Status Labels */
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.status.pending {
+    background: #FFCC00;
+    color: #000;
+}
+
+.status.completed {
+    background: #28A745;
+    color: #fff;
+}
+
+/* Buttons */
+button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.edit-btn {
+    background: #168AAD;
+    color: white;
+}
+
+.edit-btn:hover {
+    background: #126E82;
+}
+
+.delete-btn {
+    background: #E63946;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #C92A2A;
+}
+
+/* Modal Styles */
+#editTaskModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    width: 40%;
+}
+
+#editTaskModal h2 {
+    color: #126E82;
+}
+
+#editTaskModal input, #editTaskModal select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: #F0FDFB;
+    border: 2px solid #168AAD;
+    color: #2C3333;
+}
+
+#editTaskModal button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#editTaskModal .close-btn {
+    background: #E63946;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+}
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
